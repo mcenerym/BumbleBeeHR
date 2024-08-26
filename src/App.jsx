@@ -6,8 +6,8 @@ import EmployeeDashboard from './components/EmployeeDashboard'
 function App() {
 	return (
 		<Routes>
-			<Route path='/' element={<EmployeeDashboard />} />
-			<Route path='/addEmployee' element={<AddEmployee />} />
+			<Route path='/BumbleBeeHR/' element={<EmployeeDashboard />} />
+			<Route path='/BumbleBeeHR/addEmployee' element={<AddEmployee />} />
 		</Routes>
 	)
 }
