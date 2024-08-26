@@ -2,7 +2,8 @@ import { Link } from 'react-router-dom'
 import employeeData from '../data/employeesData.json'
 
 function EmployeeDashboard() {
-	const headerData = Object.keys(employeeData.reduce((o, c) => Object.assign(o, c)))
+	let employeeParseData = JSON.parse(JSON.stringify(employeeData))
+	const headerData = Object.keys(employeeParseData.reduce((o, c) => Object.assign(o, c)))
 
 	return (
 		<div className='bg-slate-800 grid w-full h-screen border-2 place-items-center'>
