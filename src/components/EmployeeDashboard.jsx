@@ -36,7 +36,7 @@ function EmployeeDashboard() {
 					</table>
 					<Link
 						className='bg-blue-600 text-white px-3 py-3 text-lg mt-3 float-right'
-						to='/BumbleBeeHR/addEmployee'>
+						to='/HoneyCombHR/addEmployee'>
 						Add Employee
 					</Link>
 				</div>
