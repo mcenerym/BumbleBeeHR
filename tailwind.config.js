@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        concertOne: ["Concert One", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
