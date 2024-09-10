@@ -1,7 +1,6 @@
-import AddEmployee from './components/AddEmployee'
-import EmployeeDashboard from './components/EmployeeDashboard'
-
 import HeaderLogo from './assets/logo.png'
+import EditableDatagrid from './components/EditableDatagrid'
+import employeeData from './data/employeesData.json'
 
 function App() {
 	return (
@@ -12,11 +11,7 @@ function App() {
 					<img className='mt-3 h-[30px]' src={HeaderLogo} />
 					<label className='text-5xl'>mb HR</label>
 				</div>
-				<EmployeeDashboard />
-				<button class='bg-blue-500 ml-auto mr-2 mt-1 block hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-					Add
-				</button>
-				<AddEmployee />
+				<EditableDatagrid data={employeeData} />
 			</div>
 		</div>
 	)
