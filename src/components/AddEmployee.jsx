@@ -1,5 +1,5 @@
 function AddEmployee() {
-	return <div>Add Employee Page</div>
+	return <div>Add employee form</div>
 }
 
 export default AddEmployee

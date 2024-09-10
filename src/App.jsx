@@ -1,5 +1,3 @@
-import { Route, Routes } from 'react-router-dom'
-
 import AddEmployee from './components/AddEmployee'
 import EmployeeDashboard from './components/EmployeeDashboard'
 
@@ -14,10 +12,11 @@ function App() {
 					<img className='mt-3 h-[30px]' src={HeaderLogo} />
 					<label className='text-5xl'>mb HR</label>
 				</div>
-				<Routes>
-					<Route path='/HoneyCombHR/' element={<EmployeeDashboard />} />
-					<Route path='/HoneyCombHR/addEmployee' element={<AddEmployee />} />
-				</Routes>
+				<EmployeeDashboard />
+				<button class='bg-blue-500 ml-auto mr-2 mt-1 block hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
+					Add
+				</button>
+				<AddEmployee />
 			</div>
 		</div>
 	)
